@@ -2,32 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* styles/fonts.css */
+@font-face {
+  font-family: 'Valky';
+  src: url('/fonts/valky/TTF/ValkyRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Bremenoff Book" ;
+  src: url('/fonts/bremenoff/Bremenoff Book.otf') format('opentype');
+  font: weight auto;
+  font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: Kumlien;
+  src: url('/fonts/Kumlien/Kumlien.woff2') format('opentype');
+  font-display: swap;
+    font-style: normal;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.work-sans-thin {
+  font-weight: 100;
+}
+
+.work-sans-extralight {
+  font-weight: 200;
+}
+
+.work-sans-light {
+  font-weight: 300;
+}
+
+.work-sans-400 {
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-stretch: 100%;
+  font-variation-settings: normal;
+  font-feature-settings: normal;
+  text-transform: none;
+  text-decoration: none solid rgb(36, 37, 39);
+  text-indent: 0px;
+}
+
+.work-sans-medium {
+  font-weight: 500;
+}
+
+.work-sans-semibold {
+  font-weight: 600;
+}
+
+.work-sans-bold {
+  font-weight: 700;
+}
+
+.work-sans-extrabold {
+  font-weight: 800;
+}
+
+.work-sans-black {
+  font-weight: 900;
+}
+
+.logo-title {
+  font-family: 'Valky', sans-serif;
+}
+
+.bremenoff-book-400 {
+  font-family: 'Bremenoff Book', sans-serif;
+  font-weight: 400;
+}
+
+.kumlien-400 {
+  font-family: 'Kumlien', sans-serif;
+   font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  font-kerning: auto;
+  font-optical-sizing: auto;
+  font-stretch: 100%;
+  font-variation-settings: normal;
+  font-feature-settings: normal;
+  text-decoration: none solid ;
+  text-indent: 0px;
 }
